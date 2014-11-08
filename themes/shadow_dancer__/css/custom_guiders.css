@@ -1,0 +1,12 @@
+div.guider.custom  {
+  background: #FFF;
+  border: 8px solid #666;
+}
+
+div.guider.custom h1 {
+	color:red;
+	float:none;
+	border-bottom: 1px dotted red;
+	padding-bottom:4px;
+	margin-bottom:4px;
+}

@@ -1,0 +1,37 @@
+<?php
+Yii::import('application.vendors.Smarty.libs.*');
+require 'Smarty.class.php';
+
+$smarty = new Smarty;
+
+$smarty->assign('hello','Hello World, this is my first Smarty!');
+$smarty->assign('foo','this is message');
+
+
+
+$arr = array('red', 'green', 'blue');
+$smarty->assign('myColors', $arr);
+
+$people = array('fname' => 'John', 'lname' => 'Doe', 'email' => 'j.doe@example.com');
+$smarty->assign('myPeople', $people);
+
+//========================================================
+
+$template_string='{$hello}
+{$foo}
+<ul>
+{foreach $myColors as $color}
+    <li>{$color}</li>
+{/foreach}
+</ul>
+
+<ul>
+{foreach $myPeople as $key=>$value}
+   <li>{$key}: {$value}</li>
+{/foreach}
+</ul>
+
+';
+//$smarty->display('test.txt');
+echo $smarty->fetch('string:'.$template_string);
+?>

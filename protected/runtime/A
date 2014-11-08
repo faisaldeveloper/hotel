@@ -1,0 +1,4 @@
+2012/01/02 15:42:04 [info] [application] <br>id=10,username=fsfasdf,password=fasdfsda
+in D:\htdocs\yii\alfazal\protected\models\User.php (63)
+in D:\htdocs\yii\alfazal\protected\controllers\UserController.php (98)
+in D:\htdocs\yii\alfazal\index.php (13)

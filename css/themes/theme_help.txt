@@ -1,0 +1,7 @@
+download jquery ui theme
+
+copy theme from development-bundel to this folder
+
+and edit file in theme folder from jquery-ui-jquery1.8.css etc   to jquery-ui.css
+
+change in config/main.php

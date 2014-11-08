@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+#StyledAlert{
+	position:fixed;
+	_position:absolute;
+	top:50%;
+	margin-top:-117px;
+	left:50%;
+	margin-left:-177px;
+	width:354px;
+	/*height:234px;*/
+	text-align:left;
+    z-index:999;
+	background:white;
+    border: 1px solid #CCC;
+    border-radius:8px;
+    display:none;  	
+}
+#StyledAlertCloseButton{
+    position:absolute;
+    top:7px;
+    right:7px;
+    border:1px solid black;	
+	width:15px;
+	height:12px;
+	border:none;
+	cursor:pointer;
+}
+
+#StyledAlertText{
+	color:black;
+	font:12px Arial;
+	margin:30px;
+}
+
+#StyledAlertText h1{	
+	font:bold 15px Arial;
+	display:block;
+	padding-bottom:23px;
+}
+#StyledAlertText br{display:block; height:40px; padding-bottom:20px;}
+#StyledAlertText p{margin:0;padding:0; padding-bottom:15px;}

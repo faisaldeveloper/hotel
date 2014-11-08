@@ -1,0 +1,12 @@
+2012/01/02 16:25:04 [info] [application.controllers.UserController] OLD USER id=10,username=yrtyrtyt,password=ADFDF
+in D:\htdocs\yii\alfazal\protected\models\User.php (63)
+in D:\htdocs\yii\alfazal\protected\controllers\UserController.php (98)
+in D:\htdocs\yii\alfazal\index.php (13)
+2012/01/02 16:25:04 [info] [application.controllers.UserController] NEW USER id=10,username=fdsfsf,password=ADFDF CHANGED BY admin/1
+in D:\htdocs\yii\alfazal\protected\models\User.php (80)
+in D:\htdocs\yii\alfazal\protected\controllers\UserController.php (98)
+in D:\htdocs\yii\alfazal\index.php (13)
+2012/01/02 16:27:07 [info] [application.controllers.UserController] DELETED USER id=10,username=fdsfsf,password=ADFDF Deleted BY 1/admin
+in D:\htdocs\yii\alfazal\protected\models\User.php (48)
+in D:\htdocs\yii\alfazal\protected\controllers\UserController.php (117)
+in D:\htdocs\yii\alfazal\index.php (13)

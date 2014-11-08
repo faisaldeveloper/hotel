@@ -1,0 +1,126 @@
+Copyright © 2012 Webapplicationthemes.com
+
+You may use this theme for both commercial and personal use, and customize it any way you like.
+
+We would love to see how you'll be using our theme in your application. Please feel free to send us a link to your application or a screenshot on simpsonmoyo(at)gmail.com
+
+Enjoy!
+
+You can get the User guide here:
+http://webapplicationthemes.com/index.php/site/user_guide
+
+or view the Yii Admin Theme demo here:
+http://webapplicationthemes.com/themes/
+
+Notice: yiithemes.mehesz.net limits theme uploads to 1Mb and the full theme is 1.5MB so i had to remove the small icons in the images folder. feel free to get the full theme at:
+
+http://webapplicationthemes.com
+
+or just download the icons from http://www.famfamfam.com/lab/icons/
+
+Theme Credits
+
+-Iconsweets2
+-Famfamfam Silk Icons
+-MbMenu
+-fullCalendar
+-Google chart tools
+-gvChart - jQuery plugin
+
+///////////////////=======================================================//////////////////////////////////////
+
+    Home
+    Features
+    User Guide
+    Get it Now!
+    Login
+    Register
+
+
+Shadow Dancer - Yii Framework Theme!
+
+Shadow Dancer is a clean web application theme specially designed to work with the Yii framework. With this theme, all you have to do is focus on your code. This theme supports most Yii widgets.
+
+View the online demo!
+Shadow Dancer - Yii theme
+Yii Theme - Shadow Dancer - User Guide
+
+Theming is a systematic way of customizing the outlook of pages in a Web application. By applying a new theme, the overall appearance of a Web application can be changed instantly and dramatically.
+
+In Yii, each theme is represented as a directory consisting of view files, layout files, and relevant resource files such as images, CSS files, JavaScript files, etc. The name of a theme is its directory name. All themes reside under the same directory WebRoot/themes. At any time, only one theme can be active.
+Installation
+
+To install the theme extract it and copy it to the WebRoot/themes folder in your document root.
+Configuring the theme
+
+You need to add the following in your application configuration file
+
+return array(      
+  'theme'=>'shadow_dancer',      
+  ......  
+  );
+
+Customizing your widgets globally
+
+Note: this feature has been available since version 1.1.3.
+
+Using the global widget customization feature, we only need to specify the css classes we want to use in a single place, i.e., the application configuration. This makes the customization of widgets more manageable.
+
+To use the global widget customization feature, we need to configure the widgetFactory as follows:
+
+  return array(
+    'components'=>array(
+		//copy from here
+        'widgetFactory'=>array(
+            'widgets'=>array(
+                'CGridView'=>array(
+                    'htmlOptions'=>array('cellspacing'=>'0','cellpadding'=>'0'),
+					'itemsCssClass'=>'item-class',
+					'pagerCssClass'=>'pager-class'
+                ),
+                'CJuiTabs'=>array(
+                    'htmlOptions'=>array('class'=>'shadowtabs'),
+                ),
+                'CJuiAccordion'=>array(
+                    'htmlOptions'=>array('class'=>'shadowaccordion'),
+                ),
+                'CJuiProgressBar'=>array(
+                   'htmlOptions'=>array('class'=>'shadowprogressbar'),
+                ),
+                'CJuiSlider'=>array(
+                    'htmlOptions'=>array('class'=>'shadowslider'),
+                ),
+                'CJuiSliderInput'=>array(
+                    'htmlOptions'=>array('class'=>'shadowslider'),
+                ),
+                'CJuiButton'=>array(
+                    'htmlOptions'=>array('class'=>'shadowbutton'),
+                ),
+                'CJuiButton'=>array(
+                    'htmlOptions'=>array('class'=>'shadowbutton'),
+                ),
+                'CJuiButton'=>array(
+                    'htmlOptions'=>array('class'=>'button green'),
+                ),
+            ),
+        ),
+    ),
+);
+  
+
+Please note that in Yii versions prior to 1.1.3, you need to use the following configuration to enable widget skinning:
+
+return array(
+    'components'=>array(
+        'widgetFactory'=>array(
+            'class'=>'CWidgetFactory',
+        ),
+    ),
+);
+
+ 
+
+ 
+Copyright © 2012 by webapplicationthemes.com
+All Rights Reserved.
+Powered by Yii Framework. & 960 Grid System

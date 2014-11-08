@@ -1,0 +1,138 @@
+.mcetable{
+  border-collapse: collapse;
+  border-spacing: 0;
+   background:#FFF;
+}
+
+.mcetable > thead tr:first th{
+	background-image:url(../../../images/gbgt.png);
+	background-repeat:repeat;}
+	
+	.mcetable th, .mcetable td {
+    border-top: 1px solid #DDDDDD;
+    line-height: 20px;
+    padding: 8px;
+    text-align: left;
+    vertical-align: top;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.grid-view { padding-top:0px; }
+.grid-view .mcetable.items th a {
+    display:block;
+    position:relative;
+}
+.grid-view .mcetable.items th a .caret {
+    display:none;
+    position:absolute;
+    right:5px;
+    top:7px;
+}
+.grid-view .mcetable.items th a.asc .caret { display:block; }
+.grid-view .mcetable.items th a.desc .caret {
+    border-bottom:4px solid #000000;
+    border-top:none;
+    display:block;
+}
+.grid-view .mcetable.items th:hover a:after {content:""; display:block; position:absolute; top:0; right:-10px; width:14px; height:14px; line-height:14px; vertical-align:text-top; background-image:url("../img/glyphicons-halflings.png"); background-position:-312px -96px; background-repeat:no-repeat;}
+.grid-view .mcetable.items th:hover a.asc:after {background-position:-289px -96px;}
+.grid-view .mcetable.items tr.selected td { background:#eeeeee; }
+.grid-view .filters .filter-container { padding:0 15px 0 0; }
+.grid-view .filters input, .grid-view .filters select {
+    margin-bottom:0;
+    width:100%;
+}
+.grid-view .button-column {
+    text-align:center;
+    width:70px;
+	color:#FFF;
+}
+.grid-view .checkbox-column { width:15px; }
+.grid-view .summary {
+    margin-bottom:5px;
+    text-align:right;
+	color:#FFF;
+}
+.grid-view .pager { margin-top:5px; }
+.grid-view .empty { font-style:italic; }
+.grid-view-loading { background:url(../img/loading.gif) no-repeat; }
+.list-view { padding-top:20px; }
+.list-view .summary {
+    margin-bottom:5px;
+    text-align:right;
+}
+.list-view .pager { margin-top:5px; }
+.list-view .sorter {
+    margin:0 0 5px 0;
+    text-align:right;
+}
+.list-view .sorter ul {
+    display:inline;
+    list-style:none outside none;
+    margin:0;
+    padding:0;
+}
+.list-view .sorter li {
+    display:inline;
+    margin:0 0 0 5px;
+    padding:0;
+}
+.list-view .sorter a .caret {
+    position:absolute;
+    right:5px;
+    top:7px;
+}
+.list-view .sorter a .caret.desc .caret {
+    border-bottom:4px solid #000000;
+    border-top:none;
+}
+.list-view-loading { background:url(../img/loading.gif) no-repeat; }
+.detail-view .null { color:#ffc0cb; }
+.detail-view th {
+    text-align:right;
+    width:160px;
+}
+span.required { color:#ff0000; }
+.form-inline label.error, .form-horizontal label.error, .form-vertical label.error { color:#b94a48; }
+.form-inline select.error, .form-inline input.error, .form-inline textarea.error, .form-horizontal select.error, .form-horizontal input.error, .form-horizontal textarea.error, .form-vertical select.error, .form-vertical input.error, .form-vertical textarea.error {
+    border-color:#b94a48;
+    color:#b94a48;
+}
+.form-inline select.error:focus, .form-inline input.error:focus, .form-inline textarea.error:focus, .form-horizontal select.error:focus, .form-horizontal input.error:focus, .form-horizontal textarea.error:focus, .form-vertical select.error:focus, .form-vertical input.error:focus, .form-vertical textarea.error:focus {
+    border-color:#953b39;
+    -webkit-box-shadow:0 0 6px #d59392;
+    -moz-box-shadow:0 0 6px #d59392;
+    box-shadow:0 0 6px #d59392;
+}
+.form-inline .help-block.error, .form-inline .help-inline.error, .form-horizontal .help-block.error, .form-horizontal .help-inline.error, .form-vertical .help-block.error, .form-vertical .help-inline.error { color:#b94a48; }
+
+.select2-container {
+    margin-bottom:9px;
+}
+.select2-container-multi .select2-choices {
+    height:20px;
+    font-size:14px;
+    line-height:20px;
+    border:1px solid #CCCCCC;
+    color:#555555;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius:3px;
+}
+.select2-container-multi.select2-dropdown-open .select2-choices {
+    -webkit-border-radius:3px 3px 0 0;
+    -moz-border-radius:3px 3px 0 0;
+    border-radius:3px 3px 0 0;
+}
+
+/* Responsive Tables */
+.mcetable th { font-weight: bold; }
+.mcetable td, .mcetable th { padding: 9px 9px; text-align: left; }
+.mcetable tr:hover{
+	background-color:#CCC;
+}
